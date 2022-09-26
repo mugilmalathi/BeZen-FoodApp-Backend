@@ -5,8 +5,8 @@ const foodSchema = new mongoose.Schema({
     img : {type: String},
     desc : {type : String},
     ingredients : {type : String},
-    steps : {type : String}
-    
+    steps : {type : Array}
+
 },{
     versionKey: false,
     timestamps: true
