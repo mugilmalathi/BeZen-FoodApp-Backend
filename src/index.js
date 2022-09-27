@@ -9,8 +9,10 @@ const connect = require("./config/db");
 const PORT = process.env.PORT;
 
 const foodController = require("./controller/food.controller");
+const userController = require("./controller/user.controller");
 
 app.use("/", foodController);
+app.use("/", userController);
 
 app.listen(PORT, async()=>{
     try{
