@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 const User = require("../model/user.model");
 
-router.post("/userdetails", async(req, res) => {
+router.post("/userdetailss", async(req, res) => {
     try{
-        const food = await User.create(req.body);
+        const userdetailss = await User.create(req.body);
         return res.status(201).send(userdetails);
     }catch(err){
         return res.status(500).send({message: err.message}) 
