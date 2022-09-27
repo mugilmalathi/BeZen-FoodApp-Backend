@@ -13,7 +13,7 @@ router.post("/userdetailss", async(req, res) => {
 
 router.get("/userdetailss", async(req, res) => {
     try{
-        const userdetails = await User.find().lean().exec();
+        const userdetailss = await User.find().lean().exec();
         return res.status(201).send(userdetailss);
     }catch(err){
         return res.status(500).send({message: err.message}) 
